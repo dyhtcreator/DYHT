@@ -1,0 +1,96 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="waveformGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="140" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Animated waveform bars in circular pattern -->
+  <g transform="translate(150,150)">
+    <!-- Waveform bars radiating from center -->
+    <g id="waveform-bars">
+      <rect x="-2" y="-80" width="4" height="40" fill="url(#waveformGradient)" transform="rotate(0)">
+        <animate attributeName="height" values="20;60;30;50;20" dur="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="35" fill="url(#waveformGradient)" transform="rotate(15)">
+        <animate attributeName="height" values="30;45;60;25;30" dur="1.5s" repeatCount="indefinite" begin="0.1s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="50" fill="url(#waveformGradient)" transform="rotate(30)">
+        <animate attributeName="height" values="40;20;55;40;40" dur="1.5s" repeatCount="indefinite" begin="0.2s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="25" fill="url(#waveformGradient)" transform="rotate(45)">
+        <animate attributeName="height" values="15;50;30;45;15" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="45" fill="url(#waveformGradient)" transform="rotate(60)">
+        <animate attributeName="height" values="35;25;65;35;35" dur="1.5s" repeatCount="indefinite" begin="0.4s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="35" fill="url(#waveformGradient)" transform="rotate(75)">
+        <animate attributeName="height" values="25;55;20;40;25" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="55" fill="url(#waveformGradient)" transform="rotate(90)">
+        <animate attributeName="height" values="45;30;70;25;45" dur="1.5s" repeatCount="indefinite" begin="0.6s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="30" fill="url(#waveformGradient)" transform="rotate(105)">
+        <animate attributeName="height" values="20;60;35;50;20" dur="1.5s" repeatCount="indefinite" begin="0.7s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="40" fill="url(#waveformGradient)" transform="rotate(120)">
+        <animate attributeName="height" values="30;40;25;55;30" dur="1.5s" repeatCount="indefinite" begin="0.8s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="50" fill="url(#waveformGradient)" transform="rotate(135)">
+        <animate attributeName="height" values="40;20;60;30;40" dur="1.5s" repeatCount="indefinite" begin="0.9s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="35" fill="url(#waveformGradient)" transform="rotate(150)">
+        <animate attributeName="height" values="25;45;15;50;25" dur="1.5s" repeatCount="indefinite" begin="1.0s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="45" fill="url(#waveformGradient)" transform="rotate(165)">
+        <animate attributeName="height" values="35;55;40;20;35" dur="1.5s" repeatCount="indefinite" begin="1.1s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="25" fill="url(#waveformGradient)" transform="rotate(180)">
+        <animate attributeName="height" values="15;35;50;45;15" dur="1.5s" repeatCount="indefinite" begin="1.2s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="60" fill="url(#waveformGradient)" transform="rotate(195)">
+        <animate attributeName="height" values="50;25;65;30;50" dur="1.5s" repeatCount="indefinite" begin="1.3s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="40" fill="url(#waveformGradient)" transform="rotate(210)">
+        <animate attributeName="height" values="30;60;20;55;30" dur="1.5s" repeatCount="indefinite" begin="1.4s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="35" fill="url(#waveformGradient)" transform="rotate(225)">
+        <animate attributeName="height" values="25;40;45;25;25" dur="1.5s" repeatCount="indefinite" begin="0.15s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="50" fill="url(#waveformGradient)" transform="rotate(240)">
+        <animate attributeName="height" values="40;30;55;40;40" dur="1.5s" repeatCount="indefinite" begin="0.25s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="30" fill="url(#waveformGradient)" transform="rotate(255)">
+        <animate attributeName="height" values="20;50;25;45;20" dur="1.5s" repeatCount="indefinite" begin="0.35s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="45" fill="url(#waveformGradient)" transform="rotate(270)">
+        <animate attributeName="height" values="35;20;60;35;35" dur="1.5s" repeatCount="indefinite" begin="0.45s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="55" fill="url(#waveformGradient)" transform="rotate(285)">
+        <animate attributeName="height" values="45;65;30;50;45" dur="1.5s" repeatCount="indefinite" begin="0.55s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="25" fill="url(#waveformGradient)" transform="rotate(300)">
+        <animate attributeName="height" values="15;40;55;20;15" dur="1.5s" repeatCount="indefinite" begin="0.65s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="40" fill="url(#waveformGradient)" transform="rotate(315)">
+        <animate attributeName="height" values="30;25;45;60;30" dur="1.5s" repeatCount="indefinite" begin="0.75s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="35" fill="url(#waveformGradient)" transform="rotate(330)">
+        <animate attributeName="height" values="25;50;35;30;25" dur="1.5s" repeatCount="indefinite" begin="0.85s"/>
+      </rect>
+      <rect x="-2" y="-80" width="4" height="50" fill="url(#waveformGradient)" transform="rotate(345)">
+        <animate attributeName="height" values="40;35;50;45;40" dur="1.5s" repeatCount="indefinite" begin="0.95s"/>
+      </rect>
+    </g>
+  </g>
+  
+  <!-- Center pulse -->
+  <circle cx="150" cy="150" r="8" fill="#00ff88" opacity="0.8">
+    <animate attributeName="r" values="8;15;8" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

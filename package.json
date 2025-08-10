@@ -1,0 +1,22 @@
+{
+  "name": "dyht",
+  "version": "1.0.0",
+  "description": "Dwight DVR for Sound - AI-powered audio visualization interface",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.9"
+  },
+  "keywords": ["audio", "visualization", "ai", "dwight", "dvr"],
+  "author": "",
+  "license": "ISC"
+}
