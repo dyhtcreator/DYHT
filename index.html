@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DYHT - Dwight AI Agent</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Main application container -->
+      <div id="main-container" class="main-container">
+        <!-- Floating Dwight Panel -->
+        <div id="dwight-panel" class="dwight-panel floating">
+          <div class="panel-header">
+            <h3>Dwight AI</h3>
+            <div class="panel-controls">
+              <button id="minimize-btn" class="control-btn">_</button>
+              <button id="close-btn" class="control-btn">×</button>
+            </div>
+          </div>
+          <div class="panel-content">
+            <div id="chat-container" class="chat-container">
+              <div id="chat-messages" class="chat-messages"></div>
+              <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Talk to Dwight..." />
+                <button id="send-btn" class="send-btn">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div id="content-area" class="content-area">
+          <!-- Audio Visualization Panel -->
+          <div id="audio-panel" class="panel">
+            <h3>Audio Visualization</h3>
+            <div class="audio-controls">
+              <button id="record-btn" class="record-btn">🎤 Record</button>
+              <button id="stop-btn" class="stop-btn" disabled>⏹ Stop</button>
+              <span id="recording-status" class="status-text">Ready</span>
+            </div>
+            <div class="waveform-container">
+              <!-- Live circular waveform -->
+              <canvas id="live-waveform" class="waveform-canvas circular" width="200" height="200"></canvas>
+              <!-- Playback linear waveform -->
+              <canvas id="playback-waveform" class="waveform-canvas linear" width="400" height="100"></canvas>
+            </div>
+          </div>
+
+          <!-- Audio Clips List Panel -->
+          <div id="clips-panel" class="panel">
+            <h3>Audio Clips</h3>
+            <div id="clips-list" class="clips-list">
+              <!-- Audio clips will be populated here -->
+            </div>
+          </div>
+
+          <!-- Triggers Panel -->
+          <div id="triggers-panel" class="panel">
+            <h3>Triggers & Actions</h3>
+            <div class="triggers-container">
+              <div class="trigger-item">
+                <label>Voice Activation</label>
+                <input type="checkbox" id="voice-activation" />
+              </div>
+              <div class="trigger-item">
+                <label>Auto-transcribe</label>
+                <input type="checkbox" id="auto-transcribe" checked />
+              </div>
+              <div class="trigger-item">
+                <label>Smart Response</label>
+                <input type="checkbox" id="smart-response" checked />
+              </div>
+            </div>
+          </div>
+
+          <!-- Settings Panel -->
+          <div id="settings-panel" class="panel">
+            <h3>Settings</h3>
+            <div class="settings-container">
+              <div class="setting-group">
+                <label>Admin Code</label>
+                <input type="password" id="admin-code" placeholder="Enter admin code" />
+                <button id="verify-admin" class="verify-btn">Verify</button>
+              </div>
+              <div class="setting-group">
+                <label>Theme</label>
+                <select id="theme-select">
+                  <option value="dark" selected>Dark</option>
+                  <option value="light">Light</option>
+                </select>
+              </div>
+              <div class="setting-group">
+                <label>Model</label>
+                <select id="model-select">
+                  <option value="conversational">Conversational (Llama 3)</option>
+                  <option value="reasoning">Reasoning (Mixtral)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Kill Switch -->
+          <div id="emergency-panel" class="panel emergency">
+            <h3>Emergency Controls</h3>
+            <button id="kill-switch" class="kill-switch">🚨 EMERGENCY STOP</button>
+            <p class="warning-text">Use only in case of malfunction</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background with myclouds.png -->
+      <div class="background-clouds"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

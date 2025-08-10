@@ -1,0 +1,28 @@
+[package]
+name = "dyht-app"
+version = "0.1.0"
+description = "DYHT - Dwight AI Agent for Real-Life Sound Recording and Management"
+authors = ["DYHT Creator"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.6", features = ["api-all"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "postgres", "macros", "migrate"] }
+pgvector = "0.3"
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+log = "0.4"
+env_logger = "0.10"
+anyhow = "1.0"
+thiserror = "1.0"
+regex = "1.0"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

@@ -1,0 +1,119 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "DYHT",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true,
+        "print": true,
+        "setResizable": true,
+        "setTitle": true,
+        "setSize": true,
+        "setMinSize": true,
+        "setMaxSize": true,
+        "setPosition": true,
+        "setFullscreen": true,
+        "setFocus": true,
+        "setIcon": true,
+        "setSkipTaskbar": true,
+        "setCursorGrab": true,
+        "setCursorVisible": true,
+        "setCursorIcon": true,
+        "setCursorPosition": true,
+        "setIgnoreCursorEvents": true,
+        "create": true,
+        "center": true,
+        "requestUserAttention": true,
+        "setResizable": true,
+        "setAlwaysOnTop": true,
+        "setContentProtected": true,
+        "setVisibleOnAllWorkspaces": true,
+        "setTitleBarStyle": true,
+        "setDecorations": true,
+        "setShadow": true
+      },
+      "fs": {
+        "all": false,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "copyFile": true,
+        "createDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "exists": true,
+        "scope": ["$AUDIO", "$DATA", "$CACHE", "$LOG"]
+      },
+      "path": {
+        "all": true
+      },
+      "dialog": {
+        "all": false,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "globalShortcut": {
+        "all": true
+      },
+      "notification": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.dyht.app",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "DYHT - Dwight AI Agent",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 600,
+        "decorations": true,
+        "transparent": false,
+        "alwaysOnTop": false,
+        "center": true
+      }
+    ]
+  }
+}

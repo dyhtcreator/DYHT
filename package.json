@@ -1,0 +1,22 @@
+{
+  "name": "dyht-app",
+  "version": "0.1.0",
+  "description": "DYHT - Dwight AI Agent for Real-Life Sound Recording and Management",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.6.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.6.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}
