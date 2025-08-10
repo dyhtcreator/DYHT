@@ -1,0 +1,107 @@
+.dwight-persona-panel {
+  position: relative;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.gradient-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panel-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.dwight-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dwight-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dwight-header p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+.circular-waveform-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.circular-waveform {
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.status-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.status-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.status-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.status-value.active {
+  color: #00ff88;
+  text-shadow: 0 0 4px rgba(0, 255, 136, 0.3);
+}
